@@ -13,7 +13,7 @@ int main(void)
 	int m = 1;
 	int n_max = 98;
 	int m_max = 99;
-	
+
 	while (n <= n_max)
 	{
 		m = n + 1;

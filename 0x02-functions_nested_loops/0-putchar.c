@@ -1,13 +1,12 @@
-#include <main.h>
-/**
- * main - main function and point of entry
- * _putchar: prints the characters putchar
- * Return: Returns 0 when successful
- */
+#include "main.h"
 
+/**
+ * main - prints _putchar and a new line
+ * Return: Always 0
+ */
 int main(void)
 {
-	_putchar('\n');
+	_putchar('_');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
@@ -16,5 +15,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }

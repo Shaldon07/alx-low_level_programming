@@ -2,5 +2,5 @@
 #define MAIN_H
 
 int _putchar(char c);
-int _atoi(char *s);3
+int _atoi(char *s);
 #endif

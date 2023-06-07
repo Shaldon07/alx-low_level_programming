@@ -1,0 +1,20 @@
+#include "main.h"
+
+/**
+ * _puts_recursion - similar function to puts();
+ * @s: insertion
+ * Return: 0 when sucessful
+ */
+
+void _puts_recursion(char *s)
+{
+	if (*s)
+	{
+		_putchar(*s);
+		_putschar(s + 1);
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}

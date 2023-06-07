@@ -3,7 +3,7 @@
 /**
  * _puts_recursion - similar function to puts();
  * @s: insertion
- * Return: 0 when sucessful
+ * Return: 0 when successful
  */
 
 void _puts_recursion(char *s)
@@ -14,7 +14,5 @@ void _puts_recursion(char *s)
 		_puts_recursion(s + 1);
 	}
 	else
-	{
 		_putchar('\n');
-	}
 }

@@ -4,7 +4,7 @@
 /**
  * _atoi - converts from a string to an integer
  * @s: string that is converted
- * Return: the int converted from the string
+ * Return: the integer converted from the string
  */
 
 int _atoi(char *s)
@@ -19,38 +19,32 @@ int _atoi(char *s)
 	d = 0;
 
 	while (s[ln] != '\0')
-	{
 		ln++;
-	}
 
 	while (x < ln && b == 0)
 	{
 		if (s[x] == '-')
-		{
 			++y;
-		}
+
 		if (s[x] >= '0' && s[x] <= '9')
 		{
 			d = s[x] - '0';
 			if (y % 2)
-			{
 				d = -d;
-			}
 			z = z * 10 + d;
 			b = 1;
 			if (s[x + 1] < '0' || s[x + 1] > '9')
-			{
 				break;
-			}
 			b = 0;
 		}
 		x++;
 	}
+
 	if (b == 0)
 		return (0);
-	return (y);
-}
 
+	return (z);
+}
 /**
  * main - multiplication between two numbers
  * @argv: array of the arguments
@@ -73,6 +67,7 @@ int main(int argc, char *argv[])
 	r = x1 * x2;
 
 	printf("%d\n", r);
-	return (0);
-}
 
+	return (0);
+
+}

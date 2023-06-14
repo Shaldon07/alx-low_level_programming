@@ -39,23 +39,23 @@ char **strtow(char *str)
 {
 
 	char **matrix, *tmp;
-	int x, y, z = 0, wrds, start, end;
+	int x, y, z, ln = 0, wrds, start, end;
 
 	while (*(str + ln))
 		ln++;
 
 	wrds = word_count(str);
-	if (words == 0)
+	if (wrds == 0)
 		return (NULL);
 
 	for (x = 0; x <= ln; x++)
 	{
-		if (str[x] == '' || str[x] == '\0')
+		if (str[x] == ' ' || str[x] == '\0')
 		{
 			if (z)
 			{
 				end = x;
-				tmp = (char *)malloc(sizeof(char) * (c + 1));
+				tmp = (char *) malloc(sizeof(char) * (z + 1));
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)

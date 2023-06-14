@@ -61,7 +61,7 @@ char **strtow(char *str)
 				while (start < end)
 					*tmp++ = str[start++];
 				*tmp = '\0';
-				**matrix[y] = tmp - z;
+				*matrix[y] = tmp - z;
 				y++;
 				z = 0;
 			}
@@ -69,6 +69,6 @@ char **strtow(char *str)
 	else if (z++ == 0)
 		start = x;
 	}
-	**matrix[y] = NULL;
+	*matrix[y] = NULL;
 	return (matrix);
 }

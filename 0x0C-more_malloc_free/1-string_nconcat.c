@@ -12,7 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int x = 0. y = 0, ln1 = 0, ln2 = 0;
+	unsigned int x = 0, y = 0, ln1 = 0, ln2 = 0;
 
 	while (s1 && s1[ln1])
 		ln1++;
@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n < ln2)
 		p = malloc(sizeof(char) * (ln1 + n + 1));
 	else
-		p = malloc(sizeof(char) * (ln1 + ln2 + 1))
+		p = malloc(sizeof(char) * (ln1 + ln2 + 1));
 
 	if (!p)
 		return (NULL);
@@ -34,10 +34,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	while (n < ln2 && x < (ln1 + n))
-		s[x++] = s2[y++];
+		p[x++] = s2[y++];
 
 	while (n < ln2 && x < (ln1 + ln2))
-		s[x++] = s2[y++];
+		p[x++] = s2[y++];
 
 	p[x] = '\0';
 	return (p);
